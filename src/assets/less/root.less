@@ -3,16 +3,115 @@
 <--- -------------------------- -*/
 /* 0px */
 @media only screen and (min-width: 0rem) {
+    :root {
+        --h1Size: 2.25rem;
+        --h1Weight: 700;
+        --h2Size: 1.5rem;
+        --h2Weight: 700;
+        --subheadingSize: 1rem;
+        --subheadingWeight: 700;
+        --paragraphSize: 1rem;
+        --paragraphWeight: 400;
+        --smallTextSize: 1rem;
+        --smallTextWeight: 100;
+        --accent1: #000000;
+        --accent2: #781F01;
+        --accent3: #F3ECD8;
+        --accent4: #ffffff;
+    }
+    
+    .credit a {
+        font-size: inherit;
+    }
+    
+    html {
+        font-size: 16px;
+    }
+    
+    .skip {
+        z-index: -1111111;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    body,
+    html {
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-y; 
+    }
+    body,
+    html,
+    button {
+        font-family: "NeueHaasGroteskDisplayPro";
+    }
+    h1 {
+        font-size: var(--h1Size);
+        font-weight: var(--h1Weight);
+    }
+    h2 {
+        font-size: var(--h2Size);
+        font-weight: var(--h2Weight);
+    }
+    h3
+    h4,
+    h5,
+    h6 {
+        font-size: var(--subheadingSize);
+        font-weight: var(--subheadingWeight);
+    }
+    p, li {
+        letter-spacing: 0.75px;
+        line-height: 200%;
+        font-size: var(--paragraphSize);
+        font-weight: var(--paragraphWeight);
+    }
+    span {
+        font-size: var(--smallTextSize);
+        font-weight: var(--smallTextWeight);
+    }
 }
 /* 512px */
 @media only screen and (min-width: 32rem) {
+    :root {
+        --h1Size: 3rem;
+        --h2Size: 1.5rem;
+        --subheadingSize: 1rem;
+        --paragraphSize: 1rem;
+        --smallTextSize: 1rem;
+    }
 }
 /* 768px */
 @media only screen and (min-width: 48rem) {
+    :root {
+        --h1Size: 3rem;
+        --h2Size: 1.5rem;
+        --subheadingSize: 1rem;
+        --paragraphSize: 1rem;
+        --smallTextSize: 1rem;
+    }
 }
 /* 992 px */
 @media only screen and (min-width: 62rem) {
+    :root {
+        --h1Size: 3rem;
+        --h2Size: 1.5rem;
+        --subheadingSize: 1rem;
+        --paragraphSize: 1rem;
+        --smallTextSize: 1rem;
+    }
 }
 /* 1280px */
 @media only screen and (min-width: 80rem) {
+    :root {
+        --h1Size: 3rem;
+        --h2Size: 1.5rem;
+        --subheadingSize: 1rem;
+        --paragraphSize: 1rem;
+        --smallTextSize: 1rem;
+    }
 }

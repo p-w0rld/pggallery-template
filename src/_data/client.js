@@ -1,3 +1,7 @@
+const server = require("../config/server");
+const isProduction = server.isProduction;
+const baseUrl = isProduction ? `https://www.pggallery.com` : `http://localhost:8080`;
+
 module.exports = {
     "name": "pgGallery",
     "email": "contactß@pggallery.com",
@@ -17,5 +21,5 @@ module.exports = {
         "instagram": "",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.pggallery.com"
+    "domain": baseUrl
 };

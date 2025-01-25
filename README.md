@@ -30,6 +30,12 @@
 
 ## Prerequisites
 
+[] Update \_data/client.js
+[] Update assets/favicons
+[] Update assets/images
+[] Import fonts
+[] Update root.css variables
+
 ### Good-to-knows
 
 _Not required for light-medium kit usage, but helpful if you want to customise the kit beyond base functionality_
