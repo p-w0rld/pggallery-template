@@ -30,11 +30,21 @@
 
 ## Prerequisites
 
-[] Update \_data/client.js
-[] Update assets/favicons
-[] Update assets/images
-[] Import fonts
-[] Update root.css variables
+- [] Update \_data/client.js
+- [] Update assets/favicons
+- [] Update assets/images
+- [] Import fonts
+
+```
+The fonts are located on your machine in the following folders:
+  Mac: /Users/<your user name>/Library/ApplicationSupport/Adobe/CoreSync/plugins/livetype/.r
+  Windows: C:\Users\<your user name>\AppData\Roaming\Adobe\CoreSync\plugins\livetype\r
+
+Press Command + Shift + . ( Dot)
+Your hidden files will become visible. Repeat step 2 to hide them again!
+```
+
+- [] Update root.css variables
 
 ### Good-to-knows
 
@@ -55,12 +65,13 @@ _Not required for light-medium kit usage, but helpful if you want to customise t
 This documentation will explain all the files and directories in the starter kit, from root inwards, top to bottom. By the end, you should have a full understanding of all files and directories, and be fully equipped to adapt the kit to your needs.
 
 ```
+
 .
 ├── public/
 ├── src/
-│ ├── _data/
+│ ├── \_data/
 │ │ └── client.js
-│ ├── _includes/
+│ ├── \_includes/
 │ │ ├── components/
 │ │ └── layouts/
 │ ├── admin/
@@ -77,13 +88,14 @@ This documentation will explain all the files and directories in the starter kit
 │ ├── content/
 │ │ ├── blog/
 │ │ └── pages/
-│ ├── _redirects
+│ ├── \_redirects
 │ ├── index.html
 │ ├── robots.txt
 ├── .eleventy.js
 └── netlify.toml
 └── package-lock.json
 └── package.json
+
 ```
 
 <a name="root-files"></a>
@@ -184,6 +196,7 @@ One issue that you may run into, however, is the addition of the `cs-active` cla
 To get around this, you will need to manually add some Nunjucks code to each of the navigation items to check the page the user is on and add `cs-active` if that particular page is being viewed. That code would look like this:
 
 ```
+
 <a href="/contact" class="cs-li-link {% if page.url == '/contact/' %} cs-active {% endif %}">
     Contact
 </a>
